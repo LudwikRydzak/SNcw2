@@ -36,7 +36,7 @@ class Adaline:
         for i in range(len(_labels)):
             self.entry_function(_entry_values[i])
             sum += self.single_error(_labels[i])
-        return sum / (len(_entry_values)+1)
+        return sum / (len(_entry_values))
 
     def change_weights(self, _label):
         for i in range(len(self.entry_weights)):
